@@ -1,0 +1,102 @@
+
+@import 'src/app/styles/font';
+
+
+.whats-going-on {
+	.heading{
+		padding: 0 0 0 12px;
+		color:$dark-grey;
+		font-family: $font-family;
+		font-weight: 400;
+		font-size:$fs-medium;
+		a {
+			padding: 0 12px 0 0;
+		    color: $blue;
+			text-decoration: none;
+			align-content: right;
+			text-align: right;
+			float: right;
+            font-size:$fs-regular;
+		}
+		div {
+              width: 35px;
+              height: 5px;
+             background-color: $dark-grey;
+             margin: 6px 0;
+          }
+		
+	}
+	.whats-going-on-cont {
+
+		padding: 0 0 0 0;
+		box-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+		width:100%;
+		background-color:$section-content-background-color;
+		img {
+			width: 100%;
+	    }
+		.line {
+              width: 35px;
+              height: 5px;
+              background-color:  $section-content-color;
+              margin: 6px ;
+
+          }
+		
+		p {
+			width:100%;
+			margin-bottom: 0;
+			padding:10px;
+			color: $section-content-color;
+		}
+
+		a {
+			background-color:$section-content-background-color;
+			color: $section-content-color;
+			text-decoration: none;
+			align-content: right;
+			text-align: right;
+			float: right;
+		}
+		.contain {
+            position: relative;
+            
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+             width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: $section-content-background-color;
+          }
+		
+        .contain:hover .overlay {
+             opacity: 1;
+          }
+
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+         }
+
+		@media (max-width:$medium) {
+			margin-top: 30px;
+		}
+	}
+	@media (max-width: $small) {
+		padding:50px 0;
+	}
+}
+
